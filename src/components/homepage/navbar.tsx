@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material";
 import { useNavigate } from "react-router";
+import WhatsAppButton from "../ui/whatsapp-button";
 function Navbar() {
   const navigate = useNavigate();
   const items = [
@@ -8,34 +9,34 @@ function Navbar() {
       url: "/",
     },
     {
-      title: "Option 1",
+      title: "About",
       url: "/",
     },
     {
-      title: "Option 2",
+      title: "Services",
       url: "/",
     },
     {
-      title: "Option 3",
+      title: "Tiktok",
       url: "/",
     },
   ];
   return (
-    <div className="bg-black/10 w-full border border-[gray] rounded-full flex items-center justify-center px-10 py-7 relative">
+    <div className="bg-black/10 w-full border border-[gray] rounded-full flex items-center justify-center px-10 py-3 relative">
       <div className="w-full">
         <Typography
-          fontSize={{ lg: "17px" }}
-          fontFamily={"IT Regular"}
+          fontSize={{ lg: "18px" }}
+          fontFamily={"IT Medium"}
           color="white"
         >
-          Name
+          Kenny Motors
         </Typography>
       </div>
 
       <div className="flex flex-row gap-5 w-full justify-center">
         {items.map((item, index) => (
           <Typography
-            fontSize={{ lg: "17px" }}
+            fontSize={{ lg: "18px" }}
             color="white"
             sx={{ cursor: "pointer" }}
             key={index}
@@ -48,13 +49,14 @@ function Navbar() {
       </div>
 
       <div className="w-full flex flex-row-reverse">
-        <Typography
+        {/* <Typography
           fontSize={{ lg: "17px" }}
           fontFamily={"IT Regular"}
           color="white"
         >
           Contact Us
-        </Typography>
+        </Typography> */}
+        <WhatsAppButton />
       </div>
     </div>
   );
