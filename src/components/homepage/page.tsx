@@ -1,4 +1,5 @@
 import AboutPage from "./aboutpage";
+import Footer from "./footer";
 import LandingPage from "./landingpage";
 import Services from "./services";
 import Tiktok from "./tiktok";
@@ -20,6 +21,10 @@ function Page() {
 
       <section>
         <Tiktok />
+      </section>
+
+      <section>
+        <Footer />
       </section>
     </div>
   );
