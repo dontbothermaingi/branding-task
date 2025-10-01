@@ -26,19 +26,22 @@ function Services() {
   ];
 
   return (
-    <div className="bg-[#ff6900] w-full flex gap-20 px-40 py-30 h-300 relative">
-      <div className="w-1/2 h-120 sticky top-20">
+    <div className="bg-[#ff6900] w-full flex flex-col lg:flex-row gap-10 px-6 md:px-20 py-10 md:py-20">
+      {/* Left Section (Title & Description) */}
+      <div className="w-full lg:w-1/2 lg:sticky lg:top-20 lg:h-50">
         <Typography
           color="white"
           fontFamily={"IT Medium"}
-          fontSize={{ lg: "70px" }}
+          fontSize={{ xs: "40px", sm: "50px", md: "60px", lg: "70px" }}
+          lineHeight={1.1}
         >
           Services
         </Typography>
         <Typography
           color="white"
           fontFamily={"IT Regular"}
-          fontSize={{ lg: "20px" }}
+          fontSize={{ xs: "14px", md: "19px" }}
+          className="mt-4"
         >
           Our services are designed to provide you with reliable solutions that
           make a real difference. Whether you’re looking for expert guidance,
@@ -49,15 +52,16 @@ function Services() {
         </Typography>
       </div>
 
-      <div className="w-1/2">
+      {/* Right Section (Cards) */}
+      <div className="w-full lg:w-1/2">
         <div className="flex flex-col gap-5">
           {services.map((item, index) => (
-            <Card key={index} className="h-60">
+            <Card key={index} className="h-auto lg:h-60">
               <CardHeader>
                 <CardTitle>
                   <Typography
                     fontFamily={"IT Medium"}
-                    fontSize={{ lg: "20px" }}
+                    fontSize={{ xs: "16px", md: "20px" }}
                     color="#ff6900"
                   >
                     {item.title}
@@ -65,7 +69,10 @@ function Services() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <Typography fontFamily={"IT Light"}>
+                <Typography
+                  fontFamily={"IT Light"}
+                  fontSize={{ xs: "14px", md: "16px" }}
+                >
                   {item.description}
                 </Typography>
               </CardContent>

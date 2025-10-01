@@ -12,36 +12,44 @@ function Tiktok() {
       document.body.removeChild(script);
     };
   }, []);
+
   return (
-    <div className="h-screen relative py-20 flex flex-col gap-5">
-      <div className="bg-[url('tiktok.svg')] inset-5 bg-no-repeat bg-contain bg-left absolute w-200 h-200 opacity-10 -ml-70" />
+    <div className="min-h-screen relative py-16 flex flex-col gap-8 px-4">
+      {/* Background watermark */}
+      <div className="absolute inset-0 bg-[url('tiktok.svg')] bg-no-repeat bg-contain bg-left opacity-10 pointer-events-none lg:w-200 lg:h-200 -ml-60" />
+
+      {/* Header */}
       <div className="flex items-center justify-center">
-        <div className="w-200 flex flex-col justify-center items-center">
+        <div className="max-w-3xl flex flex-col justify-center items-center gap-4 text-center">
           <Typography
-            textAlign={"center"}
-            fontFamily={"IT Medium"}
-            fontSize={{ lg: "60px" }}
-            lineHeight={{ lg: 1.1 }}
+            sx={{
+              fontFamily: "IT Medium",
+              fontSize: { xs: "32px", sm: "40px", md: "50px", lg: "60px" },
+              lineHeight: 1.1,
+            }}
           >
             Discover More on TikTok
           </Typography>
           <Typography
-            fontFamily={"IT Light"}
-            fontSize={{ lg: "18px" }}
-            textAlign={"center"}
+            sx={{
+              fontFamily: "IT Light",
+              fontSize: { xs: "14px", sm: "16px", md: "18px" },
+            }}
           >
             From sleek sedans to powerful SUVs, our TikTok feed showcases the
             vehicles we have ready for you. Follow along and find your match.
           </Typography>
         </div>
       </div>
-      <div className="">
+
+      {/* TikTok Embed */}
+      <div className="flex justify-center">
         <blockquote
-          className="tiktok-embed"
+          className="tiktok-embed w-full max-w-[780px]"
           cite="https://www.tiktok.com/@kennyelitemotors1"
           data-unique-id="kennyelitemotors1"
           data-embed-type="creator"
-          style={{ maxWidth: "780px", minWidth: "288px" }}
+          style={{ minWidth: "288px" }}
         >
           <section>
             <a
@@ -54,8 +62,6 @@ function Tiktok() {
           </section>
         </blockquote>
       </div>
-
-      <script async src="https://www.tiktok.com/embed.js"></script>
     </div>
   );
 }
