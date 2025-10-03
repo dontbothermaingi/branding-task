@@ -14,7 +14,7 @@ function LandingPage({
   scrollToTiktok,
 }: LandingPageProps) {
   return (
-    <div className="h-screen bg-[url('/l3.jpg')] bg-cover bg-center lg:bg-left relative">
+    <div className="h-180 lg:h-screen bg-[url('/l3.jpg')] bg-cover bg-center lg:bg-left relative">
       <div className="absolute bg-gradient-to-t lg:bg-gradient-to-r from-black/90 to-black/10 h-full w-full" />
 
       {/* Navbar */}
@@ -34,7 +34,7 @@ function LandingPage({
           fontSize={{ xs: "28px", sm: "40px", md: "50px", lg: "60px" }}
           lineHeight={1.1}
         >
-          Your One-Stop Destination for <br /> Auto Parts and Cars.
+          Kenny Motors <br /> Reliable Cars. Genuine Parts.
         </Typography>
 
         <Typography
