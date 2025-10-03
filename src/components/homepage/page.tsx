@@ -1,10 +1,11 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import AboutPage from "./aboutpage";
 import Footer from "./footer";
 import LandingPage from "./landingpage";
 import Services from "./services";
 import Tiktok from "./tiktok";
 import Whatwedeal from "./whatwedeal";
+import Lenis from "@studio-freight/lenis";
 
 function Page() {
   const aboutRef = useRef<HTMLElement | null>(null);
@@ -22,6 +23,15 @@ function Page() {
   function scrollToTiktok() {
     tiktokRef.current?.scrollIntoView({ behavior: "smooth" });
   }
+
+  useEffect(() => {
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  }, []);
 
   return (
     <div>
