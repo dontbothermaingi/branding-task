@@ -10,33 +10,56 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "../ui/button";
-import { Menu, X } from "lucide-react";
+import { Car, Menu, X } from "lucide-react";
+import { Typography } from "@mui/material";
 
-function Navbar() {
+interface NavbarProps {
+  scrollToAbout: () => void;
+  scrollToServices: () => void;
+  scrollToTiktok: () => void;
+}
+
+function Navbar({
+  scrollToAbout,
+  scrollToServices,
+  scrollToTiktok,
+}: NavbarProps) {
   const navigate = useNavigate();
 
   const items = [
-    { title: "Home", url: "/" },
-    { title: "About", url: "/" },
-    { title: "Services", url: "/" },
-    { title: "Tiktok", url: "/" },
+    { title: "Home", url: "/", refr: scrollToAbout },
+    { title: "About", url: "/", refr: scrollToAbout },
+    { title: "Services", url: "/", refr: scrollToServices },
+    { title: "Tiktok", url: "/", refr: scrollToTiktok },
   ];
 
   return (
     <div className="bg-black/10 w-full border border-[gray] rounded-full flex items-center justify-between px-6 md:px-10 py-3 relative">
-      {/* Left (Logo) */}
-      <span className="text-white font-medium text-lg">Kenny Motors</span>
+      <div className="flex items-center gap-2">
+        {/* Left (Logo) */}
+        <Car className="text-white lg:h-10 lg:w-10" />
+        <Typography
+          fontFamily={"IT Bold"}
+          fontSize={{ lg: "23px" }}
+          color="white"
+        >
+          Kenny Motors
+        </Typography>
+      </div>
 
       {/* Center (Desktop Menu) */}
       <div className="hidden lg:flex flex-row gap-6 justify-center">
         {items.map((item, index) => (
-          <span
+          <Typography
             key={index}
-            className="text-white cursor-pointer text-base"
-            onClick={() => navigate(item.url)}
+            color="white"
+            fontFamily={"IT Medium"}
+            fontSize={"19px"}
+            onClick={item.refr}
+            sx={{ cursor: "pointer" }}
           >
             {item.title}
-          </span>
+          </Typography>
         ))}
       </div>
 

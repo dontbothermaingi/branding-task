@@ -26,11 +26,11 @@ function Services() {
   ];
 
   return (
-    <div className="bg-[#ff6900] w-full flex flex-col lg:flex-row gap-10 px-6 md:px-20 py-10 md:py-20">
+    <div className="bg-[#E0E0E0] w-full flex flex-col lg:flex-row gap-20 px-6 md:px-20 py-10 md:py-20">
       {/* Left Section (Title & Description) */}
-      <div className="w-full lg:w-1/2 lg:sticky lg:top-20 lg:h-50">
+      <div className="w-full lg:w-1/2 lg:sticky lg:top-10 lg:h-50">
         <Typography
-          color="white"
+          color="black"
           fontFamily={"IT Medium"}
           fontSize={{ xs: "40px", sm: "50px", md: "60px", lg: "70px" }}
           lineHeight={1.1}
@@ -38,8 +38,8 @@ function Services() {
           Services
         </Typography>
         <Typography
-          color="white"
-          fontFamily={"IT Regular"}
+          color="black"
+          fontFamily={"IT Light"}
           fontSize={{ xs: "14px", md: "19px" }}
           className="mt-4"
         >
