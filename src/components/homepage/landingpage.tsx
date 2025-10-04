@@ -17,7 +17,7 @@ function LandingPage({
 
   return (
     <div className="h-180 lg:h-screen bg-[url('/l6.jpg')] lg:bg-[url('/l3.jpg')] bg-cover bg-center lg:bg-left relative">
-      <div className="absolute bg-gradient-to-t lg:bg-gradient-to-r from-black/90 to-black/10 h-full w-full" />
+      <div className="absolute bg-gradient-to-t lg:bg-gradient-to-r from-black/20 to-black/60 lg:from-black/90 lg:to-black/10 h-full w-full" />
 
       {/* Navbar */}
       <div className="px-6 md:px-20 pt-6 md:pt-10">

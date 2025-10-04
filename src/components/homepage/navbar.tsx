@@ -9,7 +9,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { Button } from "../ui/button";
-import { Car, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Typography } from "@mui/material";
 
 interface NavbarProps {
@@ -34,14 +34,13 @@ function Navbar({
     <div className="bg-black/10 w-full border border-[gray] rounded-full flex items-center justify-between px-6 md:px-10 py-3 relative">
       <div className="flex items-center gap-2">
         {/* Left (Logo) */}
-        <Car className="text-white lg:h-10 lg:w-10" />
-        <Typography
-          fontFamily={"IT Bold"}
-          fontSize={{ lg: "23px" }}
-          color="white"
-        >
-          Kenny Motors
-        </Typography>
+        <div className="">
+          <img
+            src="/logo1.png"
+            alt="logo"
+            className="object-cover w-20 h-7 lg:w-35 lg:h-15"
+          />
+        </div>
       </div>
 
       {/* Center (Desktop Menu) */}
