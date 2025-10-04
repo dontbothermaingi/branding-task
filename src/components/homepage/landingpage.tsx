@@ -16,7 +16,7 @@ function LandingPage({
   const isMobile = useMediaQuery("(max-width:1280px)");
 
   return (
-    <div className="h-180 lg:h-screen bg-[url('/l4.jpg')] lg:bg-[url('/l3.jpg')] bg-cover bg-left lg:bg-left relative">
+    <div className="h-180 lg:h-screen bg-[url('/l6.jpg')] lg:bg-[url('/l3.jpg')] bg-cover bg-center lg:bg-left relative">
       <div className="absolute bg-gradient-to-t lg:bg-gradient-to-r from-black/90 to-black/10 h-full w-full" />
 
       {/* Navbar */}
@@ -30,7 +30,7 @@ function LandingPage({
 
       {/* Content */}
       {isMobile ? (
-        <div className="flex flex-col items-center justify-center gap-4 mx-auto relative pt-35 px-5">
+        <div className="flex flex-col items-center justify-center gap-4 mx-auto relative pt-20 px-5">
           <Typography
             color="white"
             fontFamily={"IT Medium"}
