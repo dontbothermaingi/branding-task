@@ -18,6 +18,7 @@ export default function WhatsAppButton() {
         borderRadius: "8px",
         textDecoration: "none",
         fontWeight: "bold",
+        fontFamily: "IT Bold",
       }}
     >
       Chat on WhatsApp

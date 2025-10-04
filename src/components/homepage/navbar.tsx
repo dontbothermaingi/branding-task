@@ -86,7 +86,7 @@ function Navbar({
               {items.map((item, index) => (
                 <button
                   key={index}
-                  onClick={() => navigate(item.url)}
+                  onClick={item.refr}
                   className="text-[black] text-base text-left"
                 >
                   {item.title}

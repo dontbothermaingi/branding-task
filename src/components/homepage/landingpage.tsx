@@ -30,11 +30,11 @@ function LandingPage({
 
       {/* Content */}
       {isMobile ? (
-        <div className="flex flex-col items-center justify-center gap-4 mx-auto relative pt-30 px-5">
+        <div className="flex flex-col items-center justify-center gap-4 mx-auto relative pt-35 px-5">
           <Typography
             color="white"
             fontFamily={"IT Medium"}
-            fontSize={{ xs: "28px", sm: "40px", md: "50px", lg: "60px" }}
+            fontSize={{ xs: "32px", sm: "40px", md: "50px", lg: "60px" }}
             lineHeight={1.1}
             textAlign={"center"}
           >
@@ -44,7 +44,7 @@ function LandingPage({
           <Typography
             color="white"
             fontFamily={"IT Light"}
-            fontSize={{ xs: "14px", sm: "16px", lg: "18px" }}
+            fontSize={{ xs: "15px", sm: "16px", lg: "18px" }}
             textAlign={"center"}
           >
             Find the right spares, upgrade your vehicle, and drive worry-free —
