@@ -39,12 +39,20 @@ function Footer() {
               104, The Offices, 22nd street - 3rd - Arjan - Al Barsha South -
               Dubai
             </Typography> */}
-            <Typography fontFamily={"IT Light"} color="gray">
-              info@kennymotors.ae
-            </Typography>
-            <Typography fontFamily={"IT Light"} color="gray">
-              +256762932954
-            </Typography>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=kennyelitemotors@gmail.com"
+              target="_blank"
+            >
+              <Typography fontFamily={"IT Light"} color="gray">
+                kennyelitemotors@gmail.com
+              </Typography>
+            </a>
+
+            <a href="tel:‎+971 55 147 5589">
+              <Typography fontFamily={"IT Light"} color="gray">
+                ‎+971 55 147 5589
+              </Typography>
+            </a>
           </div>
 
           <div className="flex flex-col gap-2">
@@ -109,14 +117,14 @@ function Footer() {
           color="white"
           textAlign={"center"}
         >
-          Kenny Motors
+          Kenny Elite Motors
         </Typography>
 
         <div className="border-t border-[gray] w-full mt-5" />
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-5 pt-5">
           <Typography fontFamily={"IT Light"} color="gray" textAlign="center">
-            © Designed by Maingi, Powered by Kenny Motors
+            © Designed by Maingi, Powered by Kenny Elite Motors
           </Typography>
 
           <div className="flex flex-wrap justify-center md:justify-end gap-6">
