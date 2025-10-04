@@ -38,7 +38,7 @@ function LandingPage({
             lineHeight={1.1}
             textAlign={"center"}
           >
-            Kenny Motors <br /> Reliable Cars. Genuine Parts.
+            Kenny Elite Motors <br /> Reliable Cars. Genuine Parts.
           </Typography>
 
           <Typography
@@ -63,7 +63,7 @@ function LandingPage({
             fontSize={{ xs: "28px", sm: "40px", md: "50px", lg: "60px" }}
             lineHeight={1.1}
           >
-            Kenny Motors <br /> Reliable Cars. Genuine Parts.
+            Kenny Elite Motors <br /> Reliable Cars. Genuine Parts.
           </Typography>
 
           <Typography

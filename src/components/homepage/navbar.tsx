@@ -36,9 +36,9 @@ function Navbar({
         {/* Left (Logo) */}
         <div className="">
           <img
-            src="/logo1.png"
+            src="/logo3.png"
             alt="logo"
-            className="object-cover w-20 h-7 lg:w-35 lg:h-15"
+            className="object-cover w-25 h-12 lg:w-35 lg:h-17 text-white"
           />
         </div>
       </div>
