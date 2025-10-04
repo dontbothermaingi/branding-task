@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router";
 import WhatsAppButton from "../ui/whatsapp-button";
 import {
   Drawer,
@@ -24,8 +23,6 @@ function Navbar({
   scrollToServices,
   scrollToTiktok,
 }: NavbarProps) {
-  const navigate = useNavigate();
-
   const items = [
     { title: "Home", url: "/", refr: scrollToAbout },
     { title: "About", url: "/", refr: scrollToAbout },
