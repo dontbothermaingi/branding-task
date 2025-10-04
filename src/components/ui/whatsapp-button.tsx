@@ -1,3 +1,5 @@
+import { Button } from "./button";
+
 export default function WhatsAppButton() {
   const phoneNumber = "+256762932954"; // client’s WhatsApp number
   const message = "Hi, I'm interested in your cars!"; // optional message
@@ -12,16 +14,12 @@ export default function WhatsAppButton() {
       rel="noopener noreferrer"
       style={{
         display: "inline-block",
-        padding: "12px 20px",
-        backgroundColor: "#25D366",
-        color: "white",
-        borderRadius: "8px",
         textDecoration: "none",
         fontWeight: "bold",
         fontFamily: "IT Bold",
       }}
     >
-      Chat on WhatsApp
+      <Button className="bg-[#25D366]">Chat on WhatsApp</Button>
     </a>
   );
 }

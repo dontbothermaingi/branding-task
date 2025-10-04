@@ -1,6 +1,7 @@
 import { Typography, useMediaQuery } from "@mui/material";
 import Navbar from "../homepage/navbar";
 import WhatsAppButton from "../ui/whatsapp-button";
+import { Button } from "../ui/button";
 
 interface LandingPageProps {
   scrollToAbout: () => void;
@@ -51,8 +52,13 @@ function LandingPage({
             all in one place.
           </Typography>
 
-          <div>
+          <div className="flex flex-col gap-2">
             <WhatsAppButton />
+            <a href="tel:‎+971 55 147 5589">
+              <Button style={{ fontFamily: "IT Bold" }} className="w-full">
+                Call
+              </Button>
+            </a>
           </div>
         </div>
       ) : (
@@ -75,8 +81,13 @@ function LandingPage({
             all in one place.
           </Typography>
 
-          <div>
+          <div className="flex items-center gap-2">
             <WhatsAppButton />
+            <a href="tel:‎+971 55 147 5589">
+              <Button style={{ fontFamily: "IT Bold" }} className="w-full">
+                Call
+              </Button>
+            </a>
           </div>
         </div>
       )}

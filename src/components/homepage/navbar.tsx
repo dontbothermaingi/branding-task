@@ -93,7 +93,7 @@ function Navbar({
             <DrawerFooter className="mt-auto flex flex-col gap-4">
               <WhatsAppButton />
               <a href="tel:‎+971 55 147 5589">
-                <Button style={{ fontFamily: "IT Medium" }} className="w-full">
+                <Button style={{ fontFamily: "IT Bold" }} className="w-full">
                   Call
                 </Button>
               </a>
